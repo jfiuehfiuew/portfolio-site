@@ -102,3 +102,27 @@ section {
         flex-direction: column;
     }
 }
+#weather-icon {
+    font-size: 60px;
+}
+
+body.weather-sunny {
+    background-color: #fffaf0;
+}
+body.weather-sunny .site-header{
+    background-color: #fffaf0;
+}
+
+body.weather-cloudy {
+    background-color: #c7c7c7;
+}
+body.weather-cloudy .site-header{
+    background-color: #8d8d8d;
+}
+
+body.weather-rainy {
+    background-color: #b0b7b9;
+}
+body.weather-rainy .site-header{
+    background-color: #878c91;
+}
