@@ -1,0 +1,104 @@
+html {
+    scroll-behavior:   smooth;
+    scroll-padding-top: 50px;
+}
+
+body {
+    background: #ffffff;
+    color: #000000;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 100%;
+    position: fixed;
+    padding: 0px 5px 0px 0px;
+    background: #dce7e7;
+    height: 35px;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    gap:15px;
+}
+
+nav a:hover{
+    color: gray;
+}
+
+section {
+    padding: 35px 0px;
+}
+
+#Works-grid {
+    display: grid;
+    grid-template-columns: repeat(3, lfr);
+    gap: 30px;
+}
+
+.work-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+}
+
+.work-card {
+    border: 1px solid black;
+}
+
+.work-card h4 {
+    margin: 15px 15px 5px;
+}
+
+.work-card p {
+    margin: 0 15px 15px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.work-card:hover {
+    opacity: 0.8;
+}
+
+.works-controls select {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.work-category {
+    font-size: 4px;
+    padding-top: 14px;
+    color: gray;
+}
+
+.work-year {
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+@media screen and {max-width: 600px} {
+    #top {
+        padding-top: 80px;
+    }
+
+    #top img {
+        width: 100px;
+    }
+
+    #works-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .works-controls {
+        flex-direction: column;
+    }
+}

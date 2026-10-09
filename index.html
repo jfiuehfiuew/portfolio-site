@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="jp">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width", initial-scale = 1.0>
+        <title>yuya Fukushiro</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href = "#top">Yuya Fukushiro</a>
+            <nav>
+                <a href="#About">About</a>
+                <a href="#Works">Works</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="top">
+            <img src="./media/Screenshot.png" width="80%">
+        <h1>Yuya Fukushiro<br>
+            Portfolio
+        </h1>
+        </section>
+     <section id="About"></section>
+        <h3> About</h3>
+        <p>
+            福代悠弥<br>
+            東京都市大学
+        </p>
+        <p>
+            デザインデータ科学科
+        </p>
+    </section>
+    <section id="Works" class = "Works">
+        <h3>Works</h3>
+        <div class = "Works-controls"
+        <select id = "category">
+            <option value = "all">すべてのカテゴリ</option>
+        </select>
+        <select id="sort">
+            <option value = "new">新しい順</option>
+            <option value = "old">古い順</option>
+            <option value = "title">タイトル順</option>
+        </select>
+    </div>
+        <div id = "works-grid"></div>
+    </section>
+        </main>
+
+        <footer>
+            <span>@2026 Yuya Fukushiro</span>
+        </footer>
+        <script src="Works.js"></script>
+    </body>
+</html>
