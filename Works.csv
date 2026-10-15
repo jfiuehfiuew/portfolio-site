@@ -1,4 +1,4 @@
-title,description,image,link,category,year
-写真1です,写真1,./media/1.png,#,2,2026
-写真2です,写真2,./media/2.png,#,1,2024
-写真3です,写真3,./media/3.png,#,3,2025
+title,description,image,link,category,year,priority
+写真1です,写真1,./media/1.png,#,2,2026,3
+写真2です,写真2,./media/2.png,#,1,2024,1
+写真3です,写真3,./media/3.png,#,3,2025,2

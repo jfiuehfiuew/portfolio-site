@@ -67,6 +67,12 @@ headers.forEach(function(header, index){
             });
         }
 
+        else if (sortType === "priority") {
+            filteredWorks.sort(function(a,b) {
+                return Number(a.priority) - Number(b.priority);
+            });
+        }
+
         else if (sortType === "title") {
             filteredWorks.sort(function(a, b) {
                 return a.title.localeCompare(b.title, "ja");
@@ -129,13 +135,13 @@ function showWeather(code) {
     var icon = document.getElementById("weather-icon");
 
     if(code === 0) {
-        icon.textContent = "☀"
+        icon.textContent = "Weather is...☀"
         document.body.className = "weather_sunny"
     } else if (code >= 1 && code <= 3) {
-        icon.textContent = "☁"
+        icon.textContent = "Weather is...☁"
         document.body.className = "weather-cloudy"
     } else if (code >= 51 && code <= 67) {
-        icon.textContent= "☂"
+        icon.textContent= "Weather is...☂"
         document.body.className = "weather_rainy"
     } else {
         icon.textContent = "?"
