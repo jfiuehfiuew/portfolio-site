@@ -2,7 +2,30 @@ html {
     scroll-behavior:   smooth;
     scroll-padding-top: 50px;
 }
+#weather-icon {
+    font-size: 60px;
+}
 
+body.weather-sunny {
+    background-color: #fff1d5;
+}
+body.weather-sunny .site-header{
+    background-color: #c7b797;
+}
+
+body.weather-cloudy {
+    background-color: #c7c7c7;
+}
+body.weather-cloudy .site-header{
+    background-color: #8d8d8d;
+}
+
+body.weather-rainy {
+    background-color: #b0b7b9;
+}
+body.weather-rainy .site-header{
+    background-color: #878c91;
+}
 body {
     background: #ffffff;
     color: #000000;
@@ -20,7 +43,7 @@ header {
     width: 100%;
     position: fixed;
     padding: 0px 5px 0px 0px;
-    background: #dce7e7;
+    background: #cce6e6;
     height: 35px;
     top: 0;
 }
@@ -101,28 +124,4 @@ section {
     .works-controls {
         flex-direction: column;
     }
-}
-#weather-icon {
-    font-size: 60px;
-}
-
-body.weather-sunny {
-    background-color: #fffaf0;
-}
-body.weather-sunny .site-header{
-    background-color: #fffaf0;
-}
-
-body.weather-cloudy {
-    background-color: #c7c7c7;
-}
-body.weather-cloudy .site-header{
-    background-color: #8d8d8d;
-}
-
-body.weather-rainy {
-    background-color: #b0b7b9;
-}
-body.weather-rainy .site-header{
-    background-color: #878c91;
 }
